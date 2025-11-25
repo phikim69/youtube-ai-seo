@@ -55,7 +55,7 @@ export const generateVideoTitles = async (videoInput: string): Promise<TitleSugg
 };
 
 export const generateVideoDetails = async (selectedTitle: string): Promise<VideoDetails> => {
-  const apiKey = process.env.API_KEY || '';
+  const apiKey = process.env.API_KEY || 'AIzaSyA8r5UDBjEYPmZMnRvqzPZi1a5FW_KTthM';
   if (!apiKey) throw new Error("API Key is missing.");
 
   const ai = new GoogleGenAI({ apiKey });
@@ -115,7 +115,7 @@ export const generateThumbnailImage = async (
   modelId: ImageModelId = "gemini-2.5-flash-image",
   aspectRatio: AspectRatio = "16:9"
 ): Promise<string> => {
-  const apiKey = process.env.API_KEY || '';
+  const apiKey = process.env.API_KEY || 'AIzaSyA8r5UDBjEYPmZMnRvqzPZi1a5FW_KTthM';
   if (!apiKey) throw new Error("API Key is missing.");
 
   // Re-initialize client to ensure it uses the latest selected key (for Pro models)
