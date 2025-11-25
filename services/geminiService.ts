@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { TitleSuggestion, VideoDetails, ImageModelId, AspectRatio } from "../types";
 
 export const generateVideoTitles = async (videoInput: string): Promise<TitleSuggestion[]> => {
-  const apiKey = process.env.API_KEY || '';
+  const apiKey = process.env.API_KEY || 'AIzaSyA8r5UDBjEYPmZMnRvqzPZi1a5FW_KTthM';
   if (!apiKey) throw new Error("API Key is missing.");
   
   // Initialize client inside function to pick up any key changes
