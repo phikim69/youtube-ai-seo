@@ -55,7 +55,7 @@ export const generateVideoTitles = async (videoInput: string): Promise<TitleSugg
 };
 
 export const generateVideoDetails = async (selectedTitle: string): Promise<VideoDetails> => {
-  const apiKey = process.env.API_KEY || 'AIzaSyB1fRdetoE_EvGcit-oXVNh6m2RwyEs4ps';
+  const apiKey = process.env.API_KEY || 'AIzaSyA8r5UDBjEYPmZMnRvqzPZi1a5FW_KTthM';
   if (!apiKey) throw new Error("API Key is missing.");
 
   const ai = new GoogleGenAI({ apiKey });
